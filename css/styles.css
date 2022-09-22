@@ -1,0 +1,333 @@
+:root {
+  --primary-text-color: #212121;
+  --white-text-color: #ffffff;
+  --title-text-color: #757575;
+  --accent-color: #2196f3;
+  --background-color: #f5f5f5;
+  --section-background-color: #f5f4fa;
+  --blok-background-color: #eeeeee;
+  --footer-color: #2f303a;
+  --border-line: #ececec;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+/* Основний колір фону та тексту */
+.page {
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+button {
+  font-family: inherit;
+  font-size: 16px;
+  color: inherit;
+  cursor: pointer;
+}
+
+.picture {
+  display: block;
+}
+
+.container {
+  display: flex;
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+
+  outline: 2px solid olive;
+}
+/* Хедер */
+.header {
+  background-color: var(--white-text-color);
+  border-bottom: 1px solid var(--border-line);
+}
+.logo,
+.logo-footer,
+.partlogo {
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo {
+  color: #000000;
+}
+.logo-footer,
+.address-footer {
+  color: var(--white-text-color);
+}
+.partlogo {
+  color: var(--accent-color);
+}
+/* Хедер Посилання на інші сторінки сайту емейл та телефон */
+/* Общий родитель */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.site-nav.unit {
+  padding-left: 0;
+  margin-left: 93px;
+}
+.site-nav.panel {
+  margin-left: auto;
+  padding-left: 0;
+}
+
+.site-nav .link {
+  display: flex;
+  margin-left: auto;
+
+  color: var(--primary-text-color);
+}
+.site-nav .contact {
+  color: var(--title-text-color);
+}
+.site-nav .item {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.site-nav {
+  display: flex;
+}
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
+.site-nav .item:focus,
+.site-nav .contact:focus,
+.site-nav .contact:hover,
+.site-nav .link:hover,
+.site-nav .link:focus,
+.site-nav .link.current,
+.address-footer:focus,
+.address-footer:hover,
+.mail-footer:focus,
+.mail-footer:hover,
+.tel-footer:focus,
+.tel-footer:hover {
+  color: var(--accent-color);
+}
+
+.site-nav .link,
+.site-nav .contact {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Hero */
+/* Ефективні рішення для вашого бізнесу */
+
+.hero,
+.footer {
+  background-color: #2f303a;
+}
+
+.container-hero {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 1200px;
+  padding: 200px 0;
+  text-align: center;
+}
+.main-headline {
+  margin-top: 0;
+  color: var(--white-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.main-button {
+  display: inline-block;
+  padding: 10px 32px;
+  margin-top: 30px;
+  text-align: center;
+  border-radius: 4px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
+}
+
+/* Переваги веб студії h3*/
+
+.list.advantage {
+  display: flex;
+  padding: 94px 0;
+}
+
+.advantage .item + .item,
+.our-work .item + .item,
+.team .item + .item {
+  margin-left: 30px;
+}
+.title-capletters {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+/* Наші роботи */
+.list.our-work {
+  display: flex;
+  flex-direction: row;
+}
+.work {
+  padding: 94px 0;
+}
+
+/* h2  */
+
+.section-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.title-text,
+.site-nav .contact {
+  color: var(--title-text-color);
+}
+
+.centered {
+  text-align: center;
+}
+
+/* Наша команда */
+
+.list.team {
+  display: flex;
+  flex-direction: row;
+}
+.people {
+  padding: 94px 0;
+}
+.section-team .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+}
+
+.section-team .title-text {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+/* Приклади робіт */
+
+.section-examples {
+  margin: 94px 0;
+}
+
+.container-filter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 34px;
+  justify-content: center;
+}
+.container-filter .item + .item {
+  margin-left: 8px;
+}
+.element {
+  width: calc(100%-60/3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.element.element:nth-last-child(3n) {
+  margin-right: 0;
+}
+
+.partners {
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title.examples {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.section-examples .title-text {
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+/* Кнопки в портфоліо фільтр робіт*/
+
+.second-button {
+  background-color: var(--section-background-color);
+  display: inline-block;
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.62;
+  border: none;
+}
+.second-button:focus,
+.second-button:hover {
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
+}
+
+.address-footer,
+.mail-footer,
+.tel-footer {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+  font-style: normal;
+}
+.mail-footer,
+.tel-footer {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.container-f {
+  display: block;
+  padding: 60px 15px;
+  width: 1200px;
+  margin: 0 auto;
+}
+.address {
+  margin-top: 20px;
+}
