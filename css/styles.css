@@ -289,6 +289,7 @@ ul {
 
 .partners-project {
   padding: 19.21px 24px;
+  border: 1px solid var(--blok-background-color);
 }
 
 /* Кнопки в портфоліо фільтр робіт*/
