@@ -43,7 +43,7 @@ button {
   width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
-  margin: 0 auto;
+  margin: auto auto;
 }
 /* Хедер */
 .header {
@@ -144,6 +144,8 @@ ul {
 
 .hero {
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .main-headline {
@@ -172,19 +174,23 @@ ul {
   color: var(--white-text-color);
   background-color: var(--accent-color);
 }
+/* Секції головної сторінки  */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section-our-work {
+  padding-top: 0;
+}
 
 .advantage-text {
   line-height: 1.71;
 }
 
-.section-advantage {
-  padding: 94px 0;
-}
-
 .list.advantage {
   display: flex;
 }
-
 
 .advantage .item + .item,
 .our-work .item + .item,
@@ -226,9 +232,12 @@ ul {
   flex-direction: row;
 }
 
+.section-team {
+  background-color: var(--section-background-color);
+}
+
 .section-title.centered {
   text-align: center;
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 .title.centered {
@@ -254,15 +263,10 @@ ul {
 
 /* Приклади робіт */
 
-.section-examples {
-  margin: 94px 0;
-}
-
 .container-filter {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 34px;
+  gap: 8px;
+  margin-bottom: 50px;
   justify-content: center;
 }
 .container-filter .item + .item {
@@ -288,8 +292,10 @@ ul {
 }
 
 .partners-project {
-  padding: 19.21px 24px;
+  margin-bottom: 4px;
+  padding: 20px 24px;
   border: 1px solid var(--blok-background-color);
+  border-top: none;
 }
 
 /* Кнопки в портфоліо фільтр робіт*/
@@ -335,8 +341,7 @@ ul {
   margin-top: 20px;
 }
 
-.address-footer,
-.mail-footer {
+.footer-link:not(:last-child) {
   margin-bottom: 9px;
 }
 
