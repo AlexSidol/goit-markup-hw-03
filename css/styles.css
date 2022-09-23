@@ -162,7 +162,7 @@ ul {
 }
 
 .main-button {
-  display: inline-block;
+  display: inline-flex;
   padding: 10px 32px;
   margin-top: 30px;
   text-align: center;
